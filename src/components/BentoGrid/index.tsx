@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import DateTimeComponent from "@/components/DateTimeComponent";
 import {
   BsGithub,
   BsStackOverflow,
@@ -11,10 +11,15 @@ import {
 import BentoTextBlock from "../BentoTextBlock";
 
 const items = [
+  // {
+  //   name: "Analog Device",
+  //   image: "/grid-assets/image-grid-analog.png",
+  //   link: "https://www.analog.com/en/index.html",
+  // },
   {
-    name: "Analog Device",
-    image: "/grid-assets/image-grid-analog.png",
-    link: "https://www.analog.com/en/index.html",
+    name: "AK 01",
+    image: "/grid-assets/AK01-01.jpeg",
+    link: "/pdp/1",
   },
   {
     name: "Keyboard",
@@ -28,7 +33,7 @@ const items = [
   },
   {
     name: "Speaker",
-    image: "/grid-assets/te-ab.png",
+    image: "/grid-assets/od11-4colors.jpeg",
     link: "https://www.analog.com/en/index.html",
   },
   {
@@ -50,34 +55,32 @@ const items = [
 
 const BentoGrid = () => {
   return (
-    <div className="grid grid-cols-12 grid-rows-7 gap-4 h-full p-6 rounded-xl overflow-hidden">
-      <div className="col-span-3 row-span-3">
-        <div className="relative h-full overflow-hidden">
+    <div className="grid md:grid-cols-12 grid-rows-8 gap-4 min-h-full p-6 md:overflow-hidden">
+      {/* box 1 */}
+      <div className="relative md:col-span-3 md:row-span-3 rounded-xl h-[25vw] md:h-auto overflow-hidden">
+        <Link
+          href={items[0].link}
+          className="absolute w-full h-full overflow-hidden"
+        >
           <Image
             src={items[0].image}
             alt={items[0].name}
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
-            className="absolute" // optional
-          ></Image>
-        </div>
-      </div>
-      <div className="col-span-3 row-span-2 col-start-4 bg-gray-950 rounded-xl overflow-hidden">
-        <div className="relative h-full overflow-hidden">
-          <Image
-            src={items[1].image}
-            alt={items[1].name}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%", height: "100%" }}
             className="absolute object-cover" // optional
-          ></Image>
+          />
+        </Link>
+      </div>
+      {/* box 2 */}
+      <div className="md:col-span-3 md:row-span-2 md:col-start-4 bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
+        <div className="relative h-full overflow-hidden">
+          <DateTimeComponent />
         </div>
       </div>
-      <div className="col-span-3 row-span-2 col-start-7 bg-gray-950 rounded-xl overflow-hidden">
+      {/* box 3 */}
+      <div className="md:col-span-3 md:row-span-2 md:col-start-7 bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
         <div className="relative h-full overflow-hidden">
           <Image
             src={items[2].image}
@@ -85,41 +88,57 @@ const BentoGrid = () => {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%", height: "100%" }}
             className="absolute object-cover" // optional
           ></Image>
         </div>
       </div>
-      <div className="col-span-3 col-start-1 row-start-4 rounded-xl overflow-hidden">
+      {/* box 4 */}
+      <div className="md:col-span-3 md:row-span-2 md:col-start-1 md:row-start-4 md:row-end-6 rounded-xl h-[25vw] md:h-auto bg-gray-950 overflow-hidden">
         <div className="relative h-full overflow-hidden">
-          <Image
-            src={items[3].image}
-            alt={items[3].name}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
-            className="absolute object-cover" // optional
-          ></Image>
+          <Link
+            href="/gallery/0"
+            className="absolute w-full h-full overflow-hidden"
+          >
+            <Image
+              src={items[3].image}
+              alt={items[3].name}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              className="absolute object-cover" // optional
+            />
+          </Link>
         </div>
       </div>
-      <div className="col-span-6 row-span-2 col-start-4 row-start-3 bg-gray-950 rounded-xl overflow-hidden">
-        <h1 className="p-6 text-xl">{`Hi, I'm Sergio -- Frontend Engineer. CSS Lover. UI Developer.`}</h1>
+      {/* box 5 */}
+      <div className="md:col-span-6 md:row-span-3 md:col-start-4 md:row-start-3 bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
+        <h1 className="p-6 text-4xl font-light">
+          <span>{`Hi, I'm Sergio.`}</span>
+          <br /> <span className="font-normal">Frontend Engineer.</span>
+          <br /> CSS Lover. UI Developer.
+        </h1>
       </div>
-      <div className="col-span-6 row-span-3 col-start-1 row-start-5">
-        <div className="relative h-full overflow-hidden">
+      {/* box 6 */}
+      <div className="md:col-span-6 md:row-span-3 md:col-start-1 md:row-start-6 overflow-hidden rounded-xl h-[25vw] md:h-auto bg-gray-950">
+        <div className="relative h-full ">
           <Image
-            src={items[6].image}
+            // src={items[6].image}
+            src={
+              "https://assets-global.website-files.com/642bdda66b413ffbd3f47383/657487928e33e5e91347e07c_neon-icon01.png"
+            }
             alt={items[6].name}
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%", height: "100%", transform: "scaleX(-1)" }}
             className="absolute object-cover" // optional
           ></Image>
         </div>
       </div>
-      <div className="col-span-3 row-span-3 col-start-7 row-start-5 rounded-xl overflow-hidden">
+      {/* box 7 */}
+      <div className="md:col-span-3 md:row-span-3 md:col-start-7 md:row-start-6 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-[#c791e1]">
         <div className="relative h-full overflow-hidden">
           <Image
             src={items[4].image}
@@ -127,19 +146,21 @@ const BentoGrid = () => {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%", height: "100%" }}
             className="absolute object-cover" // optional
           ></Image>
         </div>
       </div>
-      <div className="col-start-10 row-start-1 relative bg-gray-950 rounded-xl overflow-hidden">
+      {/* box 8 */}
+      <div className="md:row-span-2 md:col-start-10 md:row-start-1 relative bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
         <div className="absolute w-full h-full flex justify-center items-center">
           <Link href="https://github.com/sergiofruto" target="_blank">
             <BsGithub size="1.2rem" color="var(--txt-color)"></BsGithub>
           </Link>
         </div>
       </div>
-      <div className="col-start-11 row-start-1 relative bg-gray-950 rounded-xl overflow-hidden">
+      {/* box 9 */}
+      <div className="md:row-span-2 md:col-start-11 md:row-start-1 relative bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
         <div className="absolute w-full h-full flex justify-center items-center">
           <Link
             href="https://www.linkedin.com/in/sergio-gabriel-fruto-41084645/"
@@ -149,7 +170,8 @@ const BentoGrid = () => {
           </Link>
         </div>
       </div>
-      <div className="col-start-12 row-start-1 relative bg-gray-950 rounded-xl overflow-hidden">
+      {/* box 10 */}
+      <div className="md:row-span-2 md:col-start-12 md:row-start-1 relative bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
         <div className="absolute w-full h-full flex justify-center items-center">
           <Link href="https://stackoverflow.com/users/5463321/sergio-gabriel-fruto">
             <BsStackOverflow
@@ -159,21 +181,24 @@ const BentoGrid = () => {
           </Link>
         </div>
       </div>
-      <div className="col-span-3 row-span-2 col-start-10 row-start-2 rounded-xl overflow-hidden bg-gray-950">
+      {/* box 11 */}
+      <div className="md:col-span-3 md:row-span-2 md:col-start-10 md:row-start-3 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-gray-950">
         <BentoTextBlock
           title="Get in touch"
           subtitle="Currently available for hire"
           link="/contact"
         />
       </div>
-      <div className="col-span-3 row-span-2 col-start-10 row-start-4 rounded-xl overflow-hidden bg-gray-950">
+      {/* box 12 */}
+      <div className="md:col-span-3 md:row-span-2 md:col-start-10 md:row-start-5 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-gray-950">
         <BentoTextBlock
           title="Examples"
           subtitle="Collection of layout examples"
           link="/examples"
         />
       </div>
-      <div className="col-span-3 row-span-2 col-start-10 row-start-6 rounded-xl overflow-hidden bg-gray-950">
+      {/* box 13 */}
+      <div className="md:col-span-3 md:row-span-2 md:col-start-10 md:row-start-7 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-gray-950">
         <BentoTextBlock
           title="Experiments"
           subtitle="Testing some tech here"
