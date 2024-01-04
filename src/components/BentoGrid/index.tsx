@@ -55,7 +55,7 @@ const items = [
 
 const BentoGrid = () => {
   return (
-    <div className="dark grid md:grid-cols-12 grid-rows-8 gap-4 auto-rows-fr md:h-full p-6 md:overflow-hidden">
+    <div className="dark grid grid-cols-2 md:grid-cols-12 md:grid-rows-8 gap-4 auto-rows-fr md:h-full p-6 md:overflow-hidden">
       {/* box 1 */}
       <div className="relative md:col-span-3 md:row-span-3 rounded-xl h-[25vw] md:h-auto overflow-hidden bento-image-container">
         <Link

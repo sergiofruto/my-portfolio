@@ -7,6 +7,7 @@ const nextConfig = {
       "images.prismic.io",
       "teenage.engineering",
       "assets-global.website-files.com",
+      "akutostudio.com",
     ],
   },
 };

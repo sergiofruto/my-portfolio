@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 const HeroVideo = () => {
   return (
     <section>
-      <div className="flex">
+      <div className="flex mb-4 md:mb-2 p-4 md:p-0">
         <h1 className={styles.title}>CHORD MACHINE</h1>
         <h2 className={styles.subtitle}>AKT-0.1</h2>
       </div>
