@@ -37,7 +37,7 @@ const DateTimeComponent = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-full">
+    <div className="flex flex-col items-center justify-center h-full dark:text-white">
       <span className="text-2xl font-thin">{formattedTime}</span>
       <span className="text-md font-thin">{formattedDate}</span>
     </div>

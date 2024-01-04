@@ -39,7 +39,7 @@ const items = [
   {
     name: "Shoe",
     image: "/grid-assets/image-grid-shoe.webp",
-    link: "https://www.analog.com/en/index.html",
+    link: "/pdp/0",
   },
   {
     name: "Morph",
@@ -55,9 +55,9 @@ const items = [
 
 const BentoGrid = () => {
   return (
-    <div className="grid md:grid-cols-12 grid-rows-8 gap-4 min-h-full p-6 md:overflow-hidden">
+    <div className="dark grid md:grid-cols-12 grid-rows-8 gap-4 auto-rows-fr md:h-full p-6 md:overflow-hidden">
       {/* box 1 */}
-      <div className="relative md:col-span-3 md:row-span-3 rounded-xl h-[25vw] md:h-auto overflow-hidden">
+      <div className="relative md:col-span-3 md:row-span-3 rounded-xl h-[25vw] md:h-auto overflow-hidden bento-image-container">
         <Link
           href={items[0].link}
           className="absolute w-full h-full overflow-hidden"
@@ -81,7 +81,7 @@ const BentoGrid = () => {
       </div>
       {/* box 3 */}
       <div className="md:col-span-3 md:row-span-2 md:col-start-7 bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
-        <div className="relative h-full overflow-hidden">
+        <div className="relative h-full overflow-hidden bento-image-container">
           <Image
             src={items[2].image}
             alt={items[2].name}
@@ -95,7 +95,7 @@ const BentoGrid = () => {
       </div>
       {/* box 4 */}
       <div className="md:col-span-3 md:row-span-2 md:col-start-1 md:row-start-4 md:row-end-6 rounded-xl h-[25vw] md:h-auto bg-gray-950 overflow-hidden">
-        <div className="relative h-full overflow-hidden">
+        <div className="relative h-full overflow-hidden bento-image-container">
           <Link
             href="/gallery/0"
             className="absolute w-full h-full overflow-hidden"
@@ -114,7 +114,7 @@ const BentoGrid = () => {
       </div>
       {/* box 5 */}
       <div className="md:col-span-6 md:row-span-3 md:col-start-4 md:row-start-3 bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
-        <h1 className="p-6 text-4xl font-light">
+        <h1 className="p-6 text-4xl font-light dark:text-white tracking-wide">
           <span>{`Hi, I'm Sergio.`}</span>
           <br /> <span className="font-normal">Frontend Engineer.</span>
           <br /> CSS Lover. UI Developer.
@@ -122,8 +122,8 @@ const BentoGrid = () => {
       </div>
       {/* box 6 */}
       <div className="md:col-span-6 md:row-span-3 md:col-start-1 md:row-start-6 overflow-hidden rounded-xl h-[25vw] md:h-auto bg-gray-950">
-        <div className="relative h-full ">
-          <Image
+        <div className="relative h-full bento-image-container overflow-hidden frosted-glass">
+          {/* <Image
             // src={items[6].image}
             src={
               "https://assets-global.website-files.com/642bdda66b413ffbd3f47383/657487928e33e5e91347e07c_neon-icon01.png"
@@ -134,28 +134,42 @@ const BentoGrid = () => {
             sizes="100vw"
             style={{ width: "100%", height: "100%", transform: "scaleX(-1)" }}
             className="absolute object-cover" // optional
-          ></Image>
+          ></Image> */}
+          <Link href="https://webgl-shaders-seven.vercel.app/">
+            <video
+              src="https://cdn.dribbble.com/uploads/48226/original/b8bd4e4273cceae2889d9d259b04f732.mp4?1689028949"
+              loop={true}
+              muted={true}
+              autoPlay={true}
+              playsInline={true}
+            ></video>
+          </Link>
         </div>
       </div>
       {/* box 7 */}
       <div className="md:col-span-3 md:row-span-3 md:col-start-7 md:row-start-6 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-[#c791e1]">
-        <div className="relative h-full overflow-hidden">
-          <Image
-            src={items[4].image}
-            alt={items[4].name}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }}
-            className="absolute object-cover" // optional
-          ></Image>
+        <div className="relative h-full overflow-hidden bento-image-container">
+          <Link
+            href={items[4].link}
+            className="absolute w-full h-full overflow-hidden"
+          >
+            <Image
+              src={items[4].image}
+              alt={items[4].name}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              className="absolute object-cover" // optional
+            />
+          </Link>
         </div>
       </div>
       {/* box 8 */}
       <div className="md:row-span-2 md:col-start-10 md:row-start-1 relative bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
         <div className="absolute w-full h-full flex justify-center items-center">
           <Link href="https://github.com/sergiofruto" target="_blank">
-            <BsGithub size="1.2rem" color="var(--txt-color)"></BsGithub>
+            <BsGithub size="1.2rem" color="white"></BsGithub>
           </Link>
         </div>
       </div>
@@ -166,7 +180,7 @@ const BentoGrid = () => {
             href="https://www.linkedin.com/in/sergio-gabriel-fruto-41084645/"
             target="_blank"
           >
-            <BsLinkedin size="1.2rem" color="var(--txt-color)"></BsLinkedin>
+            <BsLinkedin size="1.2rem" color="white"></BsLinkedin>
           </Link>
         </div>
       </div>
@@ -174,10 +188,7 @@ const BentoGrid = () => {
       <div className="md:row-span-2 md:col-start-12 md:row-start-1 relative bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
         <div className="absolute w-full h-full flex justify-center items-center">
           <Link href="https://stackoverflow.com/users/5463321/sergio-gabriel-fruto">
-            <BsStackOverflow
-              size="1.2rem"
-              color="var(--txt-color)"
-            ></BsStackOverflow>
+            <BsStackOverflow size="1.2rem" color="white"></BsStackOverflow>
           </Link>
         </div>
       </div>

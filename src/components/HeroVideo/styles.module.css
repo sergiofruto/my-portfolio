@@ -1,0 +1,16 @@
+.title {
+  font-size: calc(-24.41379px + 19.31034vw);
+  font-weight: 600;
+  line-height: 86%;
+  letter-spacing: -.015em;
+}
+
+.subtitle {
+  font-size: calc(16.22989px + 2.60536vw);
+  line-height: 84.5%;
+  letter-spacing: -.005em;
+  align-self: end;
+  width: min-content;
+  text-wrap: nowrap;
+  font-weight: 700;
+}

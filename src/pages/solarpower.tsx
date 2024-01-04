@@ -7,7 +7,7 @@ import FeatureModule from "@/components/Tesla/FeatureModule";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Solarpower() {
   return (
     <main className={`${montserrat.className} bg-gray-900 relative`}>
       <Header></Header>

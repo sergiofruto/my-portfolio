@@ -15,7 +15,7 @@ const FeatureFullImageAndText = ({
         ${bgColorClass}
         ${isImageOnLeft ? "order-1" : "order-2"}`}
       >
-        <div className="content flex flex-col items-center">
+        <div className="content flex flex-col items-center max-w-xl">
           <h2 className={`text-4xl font-thin mb-8 ${txtColorClass}`}>
             Feature Full Image and Text
           </h2>
@@ -36,7 +36,7 @@ const FeatureFullImageAndText = ({
       <div
         className={`w-full lg:w-1/2 ${isImageOnLeft ? "order-2" : "order-1"}`}
       >
-        <img src={image} alt="" className="h-full object-cover" />
+        <img src={image} alt="" className="w-full h-full object-cover" />
       </div>
     </div>
   );

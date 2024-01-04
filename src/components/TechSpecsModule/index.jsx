@@ -38,20 +38,26 @@ const featuresArray = [
   },
 ];
 
-const TechSpecsModule = () => {
+const TechSpecsModule = ({ backgroundColor, textColor }) => {
   return (
-    <section className="tech-specs py-12 px-4">
-      <div className="container mx-auto flex">
-        <h2 className="tech-specs__title w-1/4 text-4xl font-thin">
+    <section
+      className={`tech-specs py-12 px-4 ${backgroundColor} ${textColor}`}
+    >
+      <div className="container mx-auto flex flex-col md:flex-row">
+        <h2
+          className={`tech-specs__title md:w-1/4 text-2xl md:text-4xl font-thin mb-6 md:mb-0 ${textColor}`}
+        >
           Tech Specs
         </h2>
-        <div className="tech-specs__container w-3/4 grid grid-cols-3 gap-5">
+        <div className="tech-specs__container md:w-3/4 grid grid-cols-3 gap-5">
           {featuresArray.map((feature, index) => (
             <div className="tech-specs__item" key={index}>
-              <h4 className="tech-specs__feature text-sm font-light">
+              <h4
+                className={`tech-specs__feature text-sm font-light ${textColor}`}
+              >
                 {feature.feature}
               </h4>
-              <p className="tech-specs__value text-sm font-thin">
+              <p className={`tech-specs__value text-sm font-thin ${textColor}`}>
                 {feature.value}
               </p>
             </div>
