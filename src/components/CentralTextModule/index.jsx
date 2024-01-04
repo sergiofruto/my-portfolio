@@ -12,8 +12,8 @@ gaming console or tv, for a rich sound experience.`,
 const CentralTextModule = () => {
   return (
     <section className="central-text-module py-12 px-4">
-      <div className="container mx-auto flex">
-        <div className="w-full text-center">
+      <div className="container flex">
+        <div className="w-full text-center max-w-5xl mx-auto">
           <h2 className="text-4xl font-thin mb-8">{copy.title}</h2>
           {/* <p className="central-text-module__description text-sm font-thin">
             {copy.description}

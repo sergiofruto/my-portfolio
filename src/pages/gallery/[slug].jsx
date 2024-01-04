@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Header from "../../components/Header";
+import HeaderVariant from "../../components/HeaderVariant";
 import Image from "next/image";
 import ImageModuleWFull from "../../components/ImageModuleWfull";
 import TechSpecsModule from "../../components/TechSpecsModule";
@@ -274,14 +274,15 @@ const Gallery = () => {
 
   return (
     <main>
-      <Header bgColor="bg-transparent" />
+      <HeaderVariant bgColor="bg-transparent" fontWeight="font-light" />
       <FullPageHeroModule
         image={
-          "https://teenage.engineering/_img/54b8e3e247af1c0300f38dae_2048.jpg"
+          "https://teenage.engineering/_img/57c69be2d8866f0300aa1a92_4096.jpg"
         }
         title={"experience the warm and natural carlsson sound."}
-        paddingTop="72px"
-      ></FullPageHeroModule>
+        paddingTop="48px"
+        textColor="text-white"
+      />
       <section className="text-white body-font bg-black">
         <div className="container px-5 pt-20 pb-4 mx-auto flex flex-wrap">
           <div className="flex w-full mb-20 flex-wrap">
