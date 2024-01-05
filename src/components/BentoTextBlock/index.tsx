@@ -15,8 +15,8 @@ const BentoTextBlock: React.FC<BentoTextBlockProps> = ({
   return (
     <a href={link} className="flex flex-col h-full justify-center p-6">
       <h2 className="text-xl mb-2 dark:text-white">{title}</h2>
-      <span className="flex gap-2 items-center mb-2 dark:text-white">
-        <p className={"text-md"}>{subtitle}</p>
+      <span className="gap-2 items-center mb-2 dark:text-white flex">
+        <p className={"text-md hidden md:flex"}>{subtitle}</p>
         <BsArrowUpRightCircle className={"w-6 dark:text-white"} />
       </span>
     </a>

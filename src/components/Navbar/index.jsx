@@ -43,6 +43,7 @@ function Navbar() {
             {navlinkes.map((navlink) => (
               <a
                 href={navlink.link}
+                key={navlink.link}
                 className={`md:w-[120px] transition-all duration-300 ease-[ease-out] text-[#8a8a93] text-lg leading-6 text-center tracking-[-0.01em] px-6 max-md:px-2 py-0 hover:text-white ${
                   navlink.link === "#home" ? "text-white" : ""
                 }`}

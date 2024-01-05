@@ -1,4 +1,5 @@
 // import { open_sans } from "../../fonts/fonts";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { images } from "../../../next.config";
 import FeatureFullImageAndText from "../../components/FeatureFullImageAndTextXL";
@@ -48,7 +49,13 @@ const Header = () => {
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
       <div class="max-w-screen-xl 2xl:max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/akuto-studio-logo.png" class="h-8" alt="Akuto Logo" />
+          <Image
+            src="/akuto-studio-logo.png"
+            width="120"
+            heigh="80"
+            class="h-8"
+            alt="Akuto Logo"
+          />
         </Link>
         <button
           data-collapse-toggle="navbar-default"

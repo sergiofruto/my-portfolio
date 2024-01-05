@@ -28,7 +28,7 @@ const items = [
   },
   {
     name: "Phone",
-    image: "/grid-assets/image-grid-phone.png",
+    image: "/one-plus/oneplus-11-promo-1.webp",
     link: "https://www.analog.com/en/index.html",
   },
   {
@@ -42,8 +42,8 @@ const items = [
     link: "/pdp/0",
   },
   {
-    name: "Morph",
-    image: "/grid-assets/morph-app.png",
+    name: "Develop",
+    image: "/grid-assets/big-grid-asset-2.png",
     link: "https://www.analog.com/en/index.html",
   },
   {
@@ -82,15 +82,20 @@ const BentoGrid = () => {
       {/* box 3 */}
       <div className="md:col-span-3 md:row-span-2 md:col-start-7 bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
         <div className="relative h-full overflow-hidden bento-image-container">
-          <Image
-            src={items[2].image}
-            alt={items[2].name}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }}
-            className="absolute object-cover" // optional
-          ></Image>
+          <Link
+            href="/product-detail/0"
+            className="absolute w-full h-full overflow-hidden"
+          >
+            <Image
+              src={items[2].image}
+              alt={items[2].name}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              className="absolute object-cover" // optional
+            />
+          </Link>
         </div>
       </div>
       {/* box 4 */}
@@ -122,27 +127,23 @@ const BentoGrid = () => {
       </div>
       {/* box 6 */}
       <div className="md:col-span-6 md:row-span-3 md:col-start-1 md:row-start-6 overflow-hidden rounded-xl h-[25vw] md:h-auto bg-gray-950">
-        <div className="relative h-full bento-image-container overflow-hidden frosted-glass">
-          {/* <Image
-            // src={items[6].image}
-            src={
-              "https://assets-global.website-files.com/642bdda66b413ffbd3f47383/657487928e33e5e91347e07c_neon-icon01.png"
-            }
-            alt={items[6].name}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%", transform: "scaleX(-1)" }}
-            className="absolute object-cover" // optional
-          ></Image> */}
+        <div className="relative h-full bento-image-container overflow-hidden">
           <Link href="https://webgl-shaders-seven.vercel.app/">
-            <video
+            {/* <video
               src="https://cdn.dribbble.com/uploads/48226/original/b8bd4e4273cceae2889d9d259b04f732.mp4?1689028949"
               loop={true}
               muted={true}
               autoPlay={true}
               playsInline={true}
-            ></video>
+            ></video> */}
+            <Image
+              src={items[5].image}
+              alt={items[5].name}
+              width={1890}
+              height={898}
+              // style={{ width: "100%", height: "100%" }}
+              className="absolute object-cover" // optional
+            ></Image>
           </Link>
         </div>
       </div>

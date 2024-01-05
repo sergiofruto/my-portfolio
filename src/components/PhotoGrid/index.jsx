@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const PhotoGrid = () => {
   return (
     <section className="lg:min-h-screen">
@@ -11,7 +13,13 @@ const PhotoGrid = () => {
             }`}
             key={`${selectedProduct.id}-${image} `}
           >
-            <img src={image} alt="" className="w-full object-cover" />
+            <Image
+              src={image}
+              width="800"
+              height="600"
+              alt=""
+              className="w-full object-cover"
+            />
           </div>
         ))}
         {/* <div className="photo-grid__item bg-slate-200"></div> */}
@@ -60,7 +68,6 @@ const PhotoGrid = () => {
           ) : (
             ""
           )}
-          <TechFeatures></TechFeatures>
           {/* <p className="text-base"></p> */}
         </div>
         <div className="product-details__info px-4 py-4 lg:py-0 font-sans col-span-2 row-span-2 col-start-5">

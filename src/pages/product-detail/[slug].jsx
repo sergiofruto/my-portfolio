@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const OnePlusLogo = () => {
   return (
@@ -25,7 +26,7 @@ const Header = () => {
           class="flex title-font items-center text-gray-900 mb-4 md:mb-0"
           style={{ width: "120px" }}
         >
-          <OnePlusLogo></OnePlusLogo>
+          <OnePlusLogo />
         </a>
         <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center justify-center text-sm">
           <a class="mr-5 hover:text-gray-900">First Link</a>
@@ -80,10 +81,12 @@ const ProductDetail = () => {
                       ></path>
                     </svg>
                   </a>
-                  <img
+                  <Image
                     class="object-cover w-full lg:h-1/2"
-                    src="https://i.postimg.cc/prW7DGkK/R-14.png"
+                    src="/one-plus/oneplus-11-promo-2.webp"
                     alt=""
+                    width={1200}
+                    height={800}
                   />
                   <a
                     class="absolute right-0 transform lg:mr-2 top-1/2 translate-1/2"
@@ -110,10 +113,12 @@ const ProductDetail = () => {
                       class="block border border-transparent hover:border-blue-400"
                       href="#"
                     >
-                      <img
+                      <Image
                         class="object-cover w-full lg:h-32"
-                        src="https://i.postimg.cc/prW7DGkK/R-14.png"
+                        src="/one-plus/oneplus-11-promo-3.webp"
                         alt=""
+                        width={1200}
+                        height={800}
                       />
                     </a>
                   </div>
@@ -122,10 +127,12 @@ const ProductDetail = () => {
                       class="block border border-transparent hover:border-blue-400"
                       href="#"
                     >
-                      <img
+                      <Image
                         class="object-cover w-full lg:h-32"
-                        src="https://i.postimg.cc/prW7DGkK/R-14.png"
+                        src="/one-plus/oneplus-11-promo-1.webp"
                         alt=""
+                        width={1200}
+                        height={800}
                       />
                     </a>
                   </div>
@@ -134,10 +141,12 @@ const ProductDetail = () => {
                       class="block border border-transparent hover:border-blue-400"
                       href="#"
                     >
-                      <img
+                      <Image
                         class="object-cover w-full lg:h-32"
-                        src="https://i.postimg.cc/prW7DGkK/R-14.png"
+                        src="/one-plus/oneplus-11-promo-2.webp"
                         alt=""
+                        width={1200}
+                        height={800}
                       />
                     </a>
                   </div>
@@ -146,10 +155,12 @@ const ProductDetail = () => {
                       class="block border border-transparent hover:border-blue-400"
                       href="#"
                     >
-                      <img
+                      <Image
                         class="object-cover w-full lg:h-32"
-                        src="https://i.postimg.cc/prW7DGkK/R-14.png"
+                        src="/one-plus/oneplus-11-promo-1.webp"
                         alt=""
+                        width={1200}
+                        height={800}
                       />
                     </a>
                   </div>

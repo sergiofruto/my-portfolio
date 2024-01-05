@@ -49,7 +49,7 @@ const FullPageHeroModule = ({
         className="absolute top-0 left-0 w-full h-full bg-dunes bg-no-repeat bg-cover"
         style={{ paddingTop: paddingTop ? `${paddingTop}` : "" }}
       >
-        <div className="flex items-center justify-center h-full">
+        <div className="flex justify-center h-full">
           <h1
             className={`text-center font-light text-5xl text-black py-6 px-2 ${textColorClass}`}
           >

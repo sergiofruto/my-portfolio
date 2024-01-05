@@ -1,12 +1,16 @@
+import Image from "next/image";
+
 const FeatureModule = () => {
   return (
     <section className="body-font">
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
         <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-          <img
+          <Image
             alt="feature"
             className="object-cover object-center h-full w-full"
             src="https://dummyimage.com/460x500"
+            width={460}
+            height={500}
           />
         </div>
         <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">

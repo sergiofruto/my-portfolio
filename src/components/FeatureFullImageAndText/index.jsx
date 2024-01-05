@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const FeatureFullImageAndText = ({
   image,
   imagePlacement,
@@ -36,7 +38,13 @@ const FeatureFullImageAndText = ({
       <div
         className={`w-full lg:w-1/2 ${isImageOnLeft ? "order-2" : "order-1"}`}
       >
-        <img src={image} alt="" className="w-full h-full object-cover" />
+        <Image
+          width="1920"
+          height="1920"
+          src={image}
+          alt=""
+          className="w-full h-full object-cover"
+        />
       </div>
     </div>
   );
