@@ -118,8 +118,8 @@ const BentoGrid = () => {
         </div>
       </div>
       {/* box 5 */}
-      <div className="md:col-span-6 md:row-span-3 md:col-start-4 md:row-start-3 bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
-        <h1 className="p-6 text-4xl font-light dark:text-white tracking-wide">
+      <div className="bento-title-block md:col-span-6 md:row-span-3 md:col-start-4 md:row-start-3 bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
+        <h1 className="bento-title p-6 text-4xl font-light dark:text-white tracking-wide">
           <span>{`Hi, I'm Sergio.`}</span>
           <br /> <span className="font-normal">Frontend Engineer.</span>
           <br /> CSS Lover. UI Developer.
