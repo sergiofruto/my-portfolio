@@ -6,6 +6,7 @@ import ImageModuleWFull from "../../components/ImageModuleWfull";
 import TechSpecsModule from "../../components/TechSpecsModule";
 import CentralTextModule from "../../components/CentralTextModule";
 import FullPageHeroModule from "../../components/FullPageHeroModule";
+import PdpFooter from "../../components/PdpFooter";
 
 const products = [
   {
@@ -274,7 +275,11 @@ const Gallery = () => {
 
   return (
     <main>
-      <HeaderVariant bgColor="bg-transparent" fontWeight="font-light" />
+      <HeaderVariant
+        textLogo="teenage engineering"
+        bgColor="bg-transparent"
+        fontWeight="font-light"
+      />
       <FullPageHeroModule
         image={
           "https://teenage.engineering/_img/57c69be2d8866f0300aa1a92_4096.jpg"
@@ -311,7 +316,7 @@ const Gallery = () => {
           </div>
           {/* <div className="w-full block h-2 my-1"></div> */}
         </div>
-        <CentralTextModule></CentralTextModule>
+        <CentralTextModule />
         <ImageModuleWFull
           imageUrl={
             "https://teenage.engineering/_img/548f02e73512d502006312a0_4096.jpg"
@@ -319,7 +324,7 @@ const Gallery = () => {
         />
       </section>
       <TechSpecsModule backgroundColor="bg-black" textColor="text-white" />
-      {/* <Footer></Footer> */}
+      <PdpFooter />
     </main>
   );
 };

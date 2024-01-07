@@ -1,9 +1,15 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
+import HeaderVariant from "../../components/HeaderVariant";
 
 const OnePlusLogo = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 24">
+    <svg
+      style={{ width: "103", height: "24" }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 103 24"
+      fill="#F50514"
+    >
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -18,45 +24,10 @@ const OnePlusLogo = () => {
   );
 };
 
-const Header = () => {
-  return (
-    <header class="text-black body-font">
-      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a
-          class="flex title-font items-center text-gray-900 mb-4 md:mb-0"
-          style={{ width: "120px" }}
-        >
-          <OnePlusLogo />
-        </a>
-        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center justify-center text-sm">
-          <a class="mr-5 hover:text-gray-900">First Link</a>
-          <a class="mr-5 hover:text-gray-900">Second Link</a>
-          <a class="mr-5 hover:text-gray-900">Third Link</a>
-          <a class="mr-5 hover:text-gray-900">Fourth Link</a>
-        </nav>
-        <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          Button
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </button>
-      </div>
-    </header>
-  );
-};
-
 const ProductDetail = () => {
   return (
     <>
-      <Header />
+      <HeaderVariant bgColor="bg-white" logo={<OnePlusLogo />} />
       <section class="py-20 font-poppins dark:bg-gray-800">
         <div class="max-w-6xl px-4 mx-auto">
           <div class="flex flex-wrap mb-24 -mx-4">

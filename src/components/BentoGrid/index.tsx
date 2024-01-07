@@ -199,7 +199,7 @@ const BentoGrid = () => {
         <BentoTextBlock
           title="Get in touch"
           subtitle="Currently available for hire"
-          link="/contact"
+          link="mailto:fruto.sergio@gmail.com"
         />
       </div>
       {/* box 12 */}
