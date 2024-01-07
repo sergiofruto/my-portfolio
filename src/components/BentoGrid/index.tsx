@@ -37,9 +37,9 @@ const items = [
     link: "https://www.analog.com/en/index.html",
   },
   {
-    name: "Shoe",
-    image: "/grid-assets/image-grid-shoe.webp",
-    link: "/pdp/0",
+    name: "Decentraland",
+    image: "/grid-assets/decentraland-grid.png",
+    link: "https://decentraland-hackaton.vercel.app/",
   },
   {
     name: "Develop",
@@ -153,6 +153,7 @@ const BentoGrid = () => {
           <Link
             href={items[4].link}
             className="absolute w-full h-full overflow-hidden"
+            target="_blank"
           >
             <Image
               src={items[4].image}
