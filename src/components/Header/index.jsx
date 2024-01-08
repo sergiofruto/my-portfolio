@@ -41,7 +41,7 @@ const Header = ({ logo, bgColor, paddingTop }) => {
           <svg
             fill="none"
             stroke="currentColor"
-            stroke-linecap="round"
+            strokeLinecap="round"
             stroke-linejoin="round"
             stroke-width="2"
             className="w-4 h-4 ml-1"
