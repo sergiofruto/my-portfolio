@@ -182,7 +182,7 @@ const BentoGrid = () => {
                 alt={items[5].name}
                 width={1890}
                 height={898}
-                // style={{ width: "100%", height: "100%" }}
+                style={{ backgroundSize: "cover", height: "100%" }}
                 className="absolute object-cover" // optional
               ></Image>
             </Link>
@@ -209,7 +209,7 @@ const BentoGrid = () => {
           </div>
         </div>
         {/* box 8 */}
-        <div className="row-end-1 md:row-span-1 md:col-start-10 md:row-start-1 relative bg-gray-100 dark:bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
+        <div className="md:row-span-1 md:col-start-10 md:row-start-1 relative bg-gray-100 dark:bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
           <div className="absolute w-full h-full flex justify-center items-center">
             <Link href="https://github.com/sergiofruto" target="_blank">
               <BsGithub
