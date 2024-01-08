@@ -8,7 +8,7 @@ const open = Open_Sans({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={`md:h-screen ${open.className} bg-gray-900`}>
+    <main className={`md:h-screen ${open.className}`}>
       <BentoGrid></BentoGrid>
     </main>
   );
