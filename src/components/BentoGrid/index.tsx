@@ -3,19 +3,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import DateTimeComponent from "@/components/DateTimeComponent";
 import BentoTextBlock from "../BentoTextBlock";
-import {
-  BsGithub,
-  BsStackOverflow,
-  BsLinkedin,
-  BsArrowUpRightCircle,
-} from "react-icons/bs";
-
-import { CiLight } from "react-icons/ci";
-import { CiDark } from "react-icons/ci";
-
-import { MdLightMode } from "react-icons/md";
-import { MdNightlightRound } from "react-icons/md";
-
+import { BsGithub, BsStackOverflow, BsLinkedin } from "react-icons/bs";
+import BadgeText from "@/components/BadgeText";
 import { IoSunnySharp } from "react-icons/io5";
 import { IoMoonSharp } from "react-icons/io5";
 
@@ -112,6 +101,7 @@ const BentoGrid = () => {
               style={{ width: "100%", height: "100%" }}
               className="absolute object-cover" // optional
             />
+            <BadgeText text="Product" theme="light" />
           </Link>
         </div>
         {/* box 2 */}
@@ -137,6 +127,7 @@ const BentoGrid = () => {
                 className="absolute object-cover" // optional
               />
             </Link>
+            <BadgeText text="Product" theme="light" />
           </div>
         </div>
         {/* box 4 */}
@@ -155,6 +146,7 @@ const BentoGrid = () => {
                 style={{ width: "100%", height: "100%" }}
                 className="absolute object-cover" // optional
               />
+              <BadgeText text="Product" theme="light" />
             </Link>
           </div>
         </div>
@@ -185,6 +177,7 @@ const BentoGrid = () => {
                 style={{ backgroundSize: "cover", height: "100%" }}
                 className="absolute object-cover" // optional
               ></Image>
+              <BadgeText text="ThreeJS" theme="light" />
             </Link>
           </div>
         </div>
@@ -205,6 +198,7 @@ const BentoGrid = () => {
                 style={{ width: "100%", height: "100%" }}
                 className="absolute object-cover" // optional
               />
+              <BadgeText text="Landing Page" theme="light" />
             </Link>
           </div>
         </div>
