@@ -152,16 +152,25 @@ const BentoGrid = () => {
         </div>
         {/* box 5 */}
         <div className="bento-title-block md:col-span-6 md:row-span-3 md:col-start-4 md:row-start-3 bg-gray-100 dark:bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
-          <h1 className="bento-title p-6 text-4xl font-light text-black dark:text-white tracking-wide">
-            <span>{`Hi, I'm Sergio.`}</span>
-            <br /> <span className="font-normal">Frontend Engineer.</span>
-            <br /> CSS Lover. UI Developer.
+          <h1 className="flex flex-col bento-title p-6 text-5xl font-bold font-montserrat text-black dark:text-white tracking-wide">
+            <span className="mb-2">{`Hi, I'm Sergio Fruto.`}</span>
+            <span className="font-normal uppercase">Fullstack Engineer.</span>
           </h1>
+          <span className="text-xl font-light text-white px-6">
+            Building robust backends and beautiful interfaces.
+          </span>
+        </div>
+        {/* Worked With row */}
+        <div className="md:col-span-6 md:col-start-4 md:row-start-6 flex flex-row items-center justify-center gap-8 bg-gray-100 dark:bg-gray-950 rounded-xl h-[10vw] md:h-auto p-4 shadow-sm">
+          <span className="text-sm text-gray-700 dark:text-gray-300 mr-2">Worked with:</span>
+          <Image src="/my-work-assets/auth0-image-small.jpg" alt="Auth0" width={60} height={30} style={{objectFit: 'contain'}} />
+          <Image src="/my-work-assets/scale01-image-small.jpg" alt="Scale" width={60} height={30} style={{objectFit: 'contain'}} />
+          <Image src="/grid-assets/image-grid-auth0-logo.png" alt="MercadoLibre" width={60} height={30} style={{objectFit: 'contain'}} />
         </div>
         {/* box 6 */}
         <div className="md:col-span-6 md:row-span-3 md:col-start-1 md:row-start-6 overflow-hidden rounded-xl h-[25vw] md:h-auto bg-gray-100 dark:bg-gray-950">
           <div className="relative h-full bento-image-container overflow-hidden">
-            <Link href="https://webgl-shaders-seven.vercel.app/">
+            <Link href="https://webgl-shaders-seven.vercel.app/" title="ThreeJS WebGL Demo: Custom shaders and 3D rendering">
               {/* <video
               src="https://cdn.dribbble.com/uploads/48226/original/b8bd4e4273cceae2889d9d259b04f732.mp4?1689028949"
               loop={true}
@@ -177,7 +186,7 @@ const BentoGrid = () => {
                 style={{ backgroundSize: "cover", height: "100%" }}
                 className="absolute object-cover" // optional
               ></Image>
-              <BadgeText text="ThreeJS" theme="light" />
+              <BadgeText text="ThreeJS · Fullstack" theme="light" />
             </Link>
           </div>
         </div>
@@ -188,6 +197,7 @@ const BentoGrid = () => {
               href={items[4].link}
               className="absolute w-full h-full overflow-hidden"
               target="_blank"
+              title="Decentraland Landing Page: React, Next.js, API integration"
             >
               <Image
                 src={items[4].image}
@@ -198,7 +208,7 @@ const BentoGrid = () => {
                 style={{ width: "100%", height: "100%" }}
                 className="absolute object-cover" // optional
               />
-              <BadgeText text="Landing Page" theme="light" />
+              <BadgeText text="Landing Page · Frontend" theme="light" />
             </Link>
           </div>
         </div>
@@ -241,8 +251,8 @@ const BentoGrid = () => {
         {/* box 11 */}
         <div className="md:col-span-3 md:row-span-2 md:col-start-10 md:row-start-2 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-gray-100 dark:bg-gray-950">
           <BentoTextBlock
-            title="Get in touch"
-            subtitle="Currently available for hire"
+            title="Let's Connect"
+            subtitle="Open to fullstack and frontend opportunities"
             link="mailto:fruto.sergio@gmail.com"
           />
         </div>
@@ -250,7 +260,7 @@ const BentoGrid = () => {
         <div className="md:col-span-3 md:row-span-2 md:col-start-10 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-gray-100 dark:bg-gray-950">
           <BentoTextBlock
             title="Examples"
-            subtitle="Collection of layouts"
+            subtitle="UI layouts & fullstack patterns"
             link="/examples"
           />
         </div>
@@ -258,7 +268,7 @@ const BentoGrid = () => {
         <div className="md:col-span-3 md:row-span-2 md:col-start-10 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-gray-100 dark:bg-gray-950">
           <BentoTextBlock
             title="Experiments"
-            subtitle="Testing some tech here"
+            subtitle="Frontend & backend tech demos"
             link="/experiments"
           />
         </div>
@@ -278,9 +288,8 @@ const BentoGrid = () => {
           </div>
         </div>
         <div className="theme-switch bg-gray-100 dark:bg-gray-950 rounded-xl md:col-span-2 flex items-center justify-end px-4">
-          {/* <span className="text-xs">All rights reserved</span> */}
           <span className="text-xs text-black dark:text-white">
-            Coded by Sergio F. © {getYear()}.
+            Designed & built by Sergio Fruto. © {getYear()}.
           </span>
         </div>
       </div>
