@@ -151,10 +151,19 @@ const BentoGrid = () => {
           </div>
         </div>
         {/* box 5 */}
+<<<<<<< HEAD
         <div className="bento-title-block md:col-span-6 md:row-span-3 md:col-start-4 md:row-start-3 bg-gray-100 dark:bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden">
           <h1 className="flex flex-col bento-title p-6 text-5xl font-bold font-montserrat text-black dark:text-white tracking-wide">
             <span className="mb-2">{`Hi, I'm Sergio Fruto.`}</span>
             <span className="font-normal uppercase">Fullstack Engineer.</span>
+=======
+        <div className="bento-title-block md:col-span-6 md:row-span-3 md:col-start-4 md:row-start-3 bg-gray-100 dark:bg-gray-950 rounded-xl h-[25vw] md:h-auto overflow-hidden flex flex-col justify-center border border-transparent dark:border-white/5 relative group">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <h1 className="bento-title p-8 md:p-10 text-3xl md:text-5xl font-light text-black dark:text-white tracking-tight relative z-10 leading-[1.1]">
+            <span>{`Sergio Gabriel Fruto`}</span>
+            <br /> <span className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 dark:from-cyan-400 dark:to-fuchsia-500">Product Engineer AI Oriented.</span>
+            <br /> <span className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mt-4 block font-normal tracking-wide">10+ Years Building Scalable Products. <br/>Shipping AI-first applications with automated pipelines.</span>
+>>>>>>> 2d09b09 (landing v3)
           </h1>
           <span className="text-xl font-light text-white px-6">
             Building robust backends and beautiful interfaces.
@@ -257,19 +266,33 @@ const BentoGrid = () => {
           />
         </div>
         {/* box 12 */}
-        <div className="md:col-span-3 md:row-span-2 md:col-start-10 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-gray-100 dark:bg-gray-950">
+        <div className="md:col-span-3 md:row-span-2 md:col-start-10 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-gray-100 dark:bg-gray-950 relative group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0 pointer-events-none"></div>
           <BentoTextBlock
+<<<<<<< HEAD
             title="Examples"
             subtitle="UI layouts & fullstack patterns"
             link="/examples"
+=======
+            title="Experience"
+            subtitle="Scale AI, Mercado Libre, Auth0"
+            link="/my-work"
+>>>>>>> 2d09b09 (landing v3)
           />
         </div>
         {/* box 13 */}
-        <div className="md:col-span-3 md:row-span-2 md:col-start-10 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-gray-100 dark:bg-gray-950">
+        <div className="md:col-span-3 md:row-span-2 md:col-start-10 rounded-xl overflow-hidden h-[25vw] md:h-auto bg-gray-100 dark:bg-gray-950 relative group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0 pointer-events-none"></div>
           <BentoTextBlock
+<<<<<<< HEAD
             title="Experiments"
             subtitle="Frontend & backend tech demos"
             link="/experiments"
+=======
+            title="Skills & AI"
+            subtitle="Copilot, Cursor, Modern Stack"
+            link="/skills"
+>>>>>>> 2d09b09 (landing v3)
           />
         </div>
         {/* dark/light theme switch */}
@@ -282,7 +305,6 @@ const BentoGrid = () => {
             {isDarkTheme ? (
               <IoSunnySharp size="1rem" className="dark:text-white " />
             ) : (
-              // <MdNightlightRound size="1rem" className="dark:text-white" />
               <IoMoonSharp size="1rem" className="dark:text-white" />
             )}
           </div>

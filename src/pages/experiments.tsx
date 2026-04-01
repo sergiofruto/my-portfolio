@@ -19,7 +19,7 @@ const LinkList = () => {
 
   return (
     <div className="relative bg-black overflow-hidden w-screen">
-      <div className="content container absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
+      <div className="content absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
         <h2 className="text-5xl font-light mb-4 text-white text-center pb-10">
           Experiments
         </h2>

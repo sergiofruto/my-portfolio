@@ -4,14 +4,15 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  	--black: #07080e;
-	--white: #fff;
-	--light-white: rgba(255, 255, 255, .64);
-	--pink: #ff2d55;
-	--blue: #261fa9;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 10, 10;
+  --background-end-rgb: 0, 0, 0;
+  --black: #07080e;
+  --white: #fff;
+  --light-white: rgba(255, 255, 255, .64);
+  --pink: #ff2d55;
+  --blue: #261fa9;
+  --accent-neon: #00f0ff;
 }
 
 @media (prefers-color-scheme: dark) {

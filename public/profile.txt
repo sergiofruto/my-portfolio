@@ -1,0 +1,126 @@
+Contactar
+fruto.sergio@gmail.com
+www.linkedin.com/in/sergio-gabriel-
+fruto-41084645 (LinkedIn)
+Aptitudes principales
+Full-Stack Development
+Front-End Development
+Angular
+Languages
+Inglés (Full Professional)
+Spanish (Native or Bilingual)
+Certifications
+Shaping up with Angular.js
+Publications
+From HTML + CSS to React + Styled
+Components
+Sergio Gabriel Fruto
+Full Stack Engineer
+Argentina
+Extracto
+Full Stack Engineer from Buenos Aires with 10+ years of experience
+building and scaling web applications for startups and global
+companies.
+My focus is on modern frontend development with React and
+Next.js, backed by solid experience in Node.js, C#, Python, and
+cloud architectures on AWS, GCP, and Azure. Over the years, I’ve
+contributed to platforms for companies like Nike, Samsung, Mercado
+Libre, and Auth0 — improving performance, accessibility, and SEO
+at scale.
+I approach engineering with a balance of craft and pragmatism:
+translating design into clean, efficient interfaces, while ensuring
+the systems behind them are reliable and scalable. I integrate AI-
+assisted development tools such as Copilot, Cursor, and ChatGPT to
+accelerate delivery while maintaining code quality and scalability.
+Core Strengths
+Frontend: React, Next.js, Angular, TypeScript, Styled Components,
+HTML5, CSS3
+Backend: Node.js, PHP, C#, .NET
+UX/UI: Design systems, accessibility, responsive design, animations
+Cloud: AWS, GCP, DigitalOcean, Contentful
+Business Focus: SEO optimization, testing pipelines, performance
+audits
+Currently advancing my expertise with AWS and AI-focused
+certifications to stay ahead in modern architectures.
+Page 1 of 4
+Always open to meaningful projects and teams that value building
+with quality and purpose.
+Experiencia
+Cresteo
+Full Stack Engineer
+febrero de 2024 - Present (2 años 2 meses)
+- Collaborated on migrating a legacy platform to a modern architecture
+using Next.js App Router and Server Components, Typescript, AWS, Github
+Actions.
+- Contributed to both frontend and backend development, ensuring code
+quality and maintainability.
+- Streamlining development pipelines and optimizing performance in
+production environments.
+- Technologies: React.js, Next.js, Node.js, AWS, Tailwind.CSS, Node.js, AWS,
+Typescript.
+Deviget LLC
+Full Stack Engineer
+junio de 2022 - enero de 2024 (1 año 8 meses)
+Buenos Aires
+- Led development for multi-client platforms using React, Next.js, and
+Typescript.
+- Built reusable UI libraries and updated legacy platforms (from CakePHP +
+Angular to React+Next and MongoDB).
+- Implementation and maintenance of design systems, and components library,
+updating the styles of old applications, and creating new pages for several
+websites.
+- Delivered new features and pages for various client websites, improving
+performance, user experience, accessibility
+- Developed backend services and REST APIs using Node.js and AWS
+Lambda.
+- Technologies: React.js, Next.js, Node.js, Typescript, Google Cloud, AWS.
+Maintenance of the legacy platform based on CakePHP + Angular.
+Page 2 of 4
+Improvements, performance, accessibility, and SEO.
+Mercado Libre
+Frontend Developer
+mayo de 2020 - junio de 2022 (2 años 2 meses)
+Buenos Aires, City of Buenos Aires, Argentina
+- Developer in the Search & Conversion team.
+- Building and maintenance of the search part of the application, with special
+work for the increase in the performance and SEO requirements.
+- Worked building components and updating the Search application, using
+React and Styled Components.
+Scale AI
+UI Developer
+julio de 2019 - abril de 2020 (10 meses)
+Argentina
+Developer in the Design team. Migration from old stack to Next JS, creation
+of products landing pages, and working on the implementation of Contentful
+(headless CMS) for the website content.
+Worked on creating and updating the company's Design system, based on
+Material-UI.
+Creating modern landing pages for the marketing team to promote all the
+Scale products.
+Auth0
+UI Engineer
+marzo de 2016 - julio de 2019 (3 años 5 meses)
+Buenos Aires
+Developer in the Marketing Engineering Team. During my 3 years in Auth0, I
+kept working on building UI and bringing designs to life in actual functioning
+websites and improved my knowledge in Javascript.
+Migrate old backbone + stylus + pug website to a modern stack with React and
+Styled Components
+Creating and maintaining the website + blog design system.
+Creating and maintaining components for the Auth0 application
+Page 3 of 4
+R/GA
+Frontend Developer Jr.
+septiembre de 2012 - marzo de 2016 (3 años 7 meses)
+Front End Development. HTML5, CSS3, Sass, Less, Javascript, jQuery,
+Responsive Web Design.
+Educación
+Instituto Superior Tecnológico Empresarial Argentino
+Tecnicatura Superior en Desarrollo de Software · (2014 - 2016)
+Universidad Centro de Altos Estudios en Ciencias Exactas
+Licenciatura en Sistemas · (2013 - 2014)
+Universidad Tecnológica Nacional
+Professional Webmaster, Informatica/Diseño Web · (2012 - 2012)
+UBA
+Abogacia · (2008 - 2012)
+Page 4 of 4
